@@ -1,0 +1,20 @@
+{
+  "name": "jarvisa-local",
+  "interface": {
+    "displayName": "Jarvisa"
+  },
+  "plugins": [
+    {
+      "name": "jarvisa-control",
+      "source": {
+        "source": "local",
+        "path": "./plugins/jarvisa-control"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
