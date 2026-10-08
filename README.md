@@ -31,7 +31,7 @@ Krizar’s existing [AppShot report](https://github.com/openai/codex/issues/4129
 
 ## Source and Italian guide
 
-Build with Apple Command Line Tools: `./build.sh universal`. Run logic checks with `./test.sh`. The complete sources and plugin manifests are in this repository. The following Italian guide describes local use and setup.
+Build with Apple Command Line Tools: `bash ./build.sh universal`. Run logic checks with `bash ./test.sh`. The complete sources and plugin manifests are in this repository. The following Italian guide describes local use and setup.
 
 ## Guida del prototipo macOS
 
@@ -67,7 +67,7 @@ Una nuova chat Codex deve caricare il plugin installato. Il server viene avviato
 Per ChatGPT, crea un tunnel in [OpenAI Platform](https://platform.openai.com/settings/organization/tunnels) e usa una chiave runtime con permessi Tunnels Read + Use, associata all’account/workspace corretto. La chiave va inserita localmente, mai in una chat. Il client ufficiale è installato in `~/Library/Application Support/JarvisaControl/tunnel-client/` e il suo archivio è stato verificato con il checksum della release ufficiale.
 
 ```sh
-./scripts/connect-chatgpt.sh
+bash ./scripts/connect-chatgpt.sh
 ```
 
 Lo script chiede l’ID del tunnel e la chiave senza mostrarla, avvia il runtime supervisionato e ne legge lo stato. Non salva la chiave in un file. In ChatGPT: Plugin → Aggiungi → Crea un server MCP personalizzato; nome **Jarvisa Control**, Connessione **Tunnel**, ID del tunnel creato. Per questo server stdio non serve un ulteriore OAuth del server: il tunnel applica l’accesso OpenAI. Seleziona Nessuna autenticazione per il server e rivedi i permessi prima di creare il plugin. Prova prima get_status e list_apps in una nuova chat, poi screenshot e input in un documento di prova.
@@ -87,12 +87,12 @@ Riferimenti: [creare un plugin](https://developers.openai.com/plugins/build/plug
 Sono sufficienti i Command Line Tools di Apple con un SDK macOS recente:
 
 ```sh
-./build.sh universal  # bundle Intel + Apple Silicon
-./test.sh            # test senza acquisizione o input reale
+bash ./build.sh universal  # bundle Intel + Apple Silicon
+bash ./test.sh            # test senza acquisizione o input reale
 open "dist/Jarvisa Control.app"
 ```
 
-Per la sola architettura corrente: `./build.sh`.
+Per la sola architettura corrente: `bash ./build.sh`.
 
 Il rendering dell’interfaccia e lo stato dei permessi si possono verificare senza richiedere autorizzazioni:
 
