@@ -1,0 +1,5 @@
+.build/
+dist/
+verification/
+verification-*/
+__pycache__/

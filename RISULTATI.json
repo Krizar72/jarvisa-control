@@ -1,0 +1,54 @@
+{
+  "version": "0.2.0",
+  "machine_architecture_tested": "x86_64",
+  "macOS": "26.7.1",
+  "built_architectures": [
+    "x86_64",
+    "arm64"
+  ],
+  "logic_checks_passed": 25,
+  "stdio_checks": [
+    "requires initialization",
+    "modern discovery falls back explicitly",
+    "legacy negotiation",
+    "nine discoverable tools",
+    "control starts disabled",
+    "input rejected while disabled",
+    "invalid arguments rejected 0",
+    "invalid arguments rejected 1",
+    "invalid arguments rejected 2",
+    "invalid arguments rejected 3",
+    "invalid arguments rejected 4",
+    "invalid arguments rejected 5",
+    "invalid arguments rejected 6",
+    "non-object arguments rejected",
+    "actual capture returns PNG",
+    "enable control succeeds",
+    "mouse events posted",
+    "typing events posted",
+    "native Unicode delivery verified",
+    "stop cancels pending input",
+    "stop disarms control",
+    "cancelled input leaves document unchanged"
+  ],
+  "native_input_test": "passed",
+  "remote_tools_count": 9,
+  "remote_protocol": "2025-11-25",
+  "chatgpt_text_expected": "Jarvisa dalla chat: prova riuscita 🎵",
+  "chatgpt_text_actual": "Jarvisa dalla chat: prova riuscita 🎵",
+  "chatgpt_text_exact_match": true,
+  "chatgpt_final_status": {
+    "remoteStatusControlEnabled": false,
+    "remoteStatus": "STOP · controllo disattivato",
+    "screenshotReadByChatGPT": {
+      "app": "TextEdit",
+      "text": "Jarvisa dalla chat: prova riuscita 🎵"
+    },
+    "imageDisplayedInChat": false
+  },
+  "duckduckgo_mouse_bookmark_navigation_verified": true,
+  "console_sidebar_mouse_selection_verified": true,
+  "console_launch_method": "macOS open command; visible window verified",
+  "screenshots_included": false,
+  "raw_logs_included": false
+}
