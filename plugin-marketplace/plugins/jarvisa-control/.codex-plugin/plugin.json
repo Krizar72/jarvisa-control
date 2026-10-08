@@ -1,0 +1,24 @@
+{
+  "name": "jarvisa-control",
+  "version": "0.2.0",
+  "description": "Acquisisce lo schermo e controlla mouse e tastiera sul Mac con Jarvisa Control.",
+  "author": {
+    "name": "Krizar"
+  },
+  "interface": {
+    "displayName": "Jarvisa Control",
+    "shortDescription": "Schermo, mouse e tastiera sul tuo Mac",
+    "longDescription": "Collega Jarvisa Control locale a ChatGPT e Codex. Nove strumenti MCP, controllo disabilitato all’avvio, destinazione esplicita ed arresto con Esc.",
+    "developerName": "Krizar",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "brandColor": "#56D6BB",
+    "defaultPrompt": [
+      "Mostra lo schermo del mio Mac con Jarvisa Control",
+      "Controlla il Mac con Jarvisa Control per la richiesta che ti darò"
+    ]
+  }
+}
